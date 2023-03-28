@@ -1,0 +1,26 @@
+get http://localhost:5000/users
+
+
+###
+get http://localhost:5000/userbyid/641d6925d3b2e37bec77139b
+
+###
+post http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "jono",
+    "email": "jono@example.com",
+    "address": "surakarta"
+}
+
+###
+
+patch http://localhost:5000/updateuser/641d6925d3b2e37bec77139b
+Content-Type: application/json
+
+{
+    "name": "jonoxxx",
+    "email": "jono@example.com",
+    "address": "surakarta"
+}
